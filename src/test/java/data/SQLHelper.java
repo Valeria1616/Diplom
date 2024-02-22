@@ -24,7 +24,6 @@ public class SQLHelper {
     private static Connection getConn() {
         return DriverManager.getConnection(url, user, password);
     }
-
     @SneakyThrows
     public static void cleanDatabase() {
         Connection conn = getConn();

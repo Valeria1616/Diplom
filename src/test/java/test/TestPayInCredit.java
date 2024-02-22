@@ -1,15 +1,14 @@
 package test;
 
 import com.codeborne.selenide.logevents.SelenideLogger;
-import io.qameta.allure.selenide.AllureSelenide;
-import org.junit.jupiter.api.*;
 import data.DataHelper;
 import data.SQLHelper;
+import io.qameta.allure.selenide.AllureSelenide;
+import org.junit.jupiter.api.*;
 import page.PageTravel;
 
 import static com.codeborne.selenide.Selenide.open;
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static data.SQLHelper.cleanDatabase;
 
 public class TestPayInCredit {
 
@@ -31,12 +30,6 @@ public class TestPayInCredit {
     void setup() {
         open(url);
     }
-
-    @AfterEach
-    public void cleanData() {
-        cleanDatabase();
-    }
-
     @Test
     @DisplayName("Card number with status APPROVED for credit")
     void shouldSuccessfulBuyInCreditWithAPPROVEDCard() {
