@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="test.TestPayment" tests="18" skipped="0" failures="18" errors="0" timestamp="2024-02-25T20:46:44" hostname="LAPTOP-95A2I61T" time="96.373">
+<testsuite name="test.TestPayment" tests="18" skipped="0" failures="18" errors="0" timestamp="2024-02-26T17:31:12" hostname="LAPTOP-95A2I61T" time="97.096">
   <properties/>
-  <testcase name="One digits CVC for payment" classname="test.TestPayment" time="10.928">
+  <testcase name="One digits CVC for payment" classname="test.TestPayment" time="14.054">
     <failure message="java.sql.SQLException: Table 'app.payment_entity' doesn't exist Query: DELETE FROM payment_entity Parameters: []" type="java.sql.SQLException">java.sql.SQLException: Table 'app.payment_entity' doesn't exist Query: DELETE FROM payment_entity Parameters: []
 	at org.apache.commons.dbutils.AbstractQueryRunner.rethrow(AbstractQueryRunner.java:634)
 	at org.apache.commons.dbutils.QueryRunner.execute(QueryRunner.java:227)
@@ -106,7 +106,7 @@
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </failure>
   </testcase>
-  <testcase name="Card number with status FIFTEEN for payment" classname="test.TestPayment" time="2.26">
+  <testcase name="Card number with status FIFTEEN for payment" classname="test.TestPayment" time="2.683">
     <failure message="java.sql.SQLException: Table 'app.payment_entity' doesn't exist Query: DELETE FROM payment_entity Parameters: []" type="java.sql.SQLException">java.sql.SQLException: Table 'app.payment_entity' doesn't exist Query: DELETE FROM payment_entity Parameters: []
 	at org.apache.commons.dbutils.AbstractQueryRunner.rethrow(AbstractQueryRunner.java:634)
 	at org.apache.commons.dbutils.QueryRunner.execute(QueryRunner.java:227)
@@ -211,7 +211,7 @@
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </failure>
   </testcase>
-  <testcase name="Card number with status DECLINED for payment" classname="test.TestPayment" time="3.952">
+  <testcase name="Card number with status DECLINED for payment" classname="test.TestPayment" time="9.951">
     <failure message="java.sql.SQLException: Table 'app.payment_entity' doesn't exist Query: SELECT * FROM payment_entity ORDER BY created DESC LIMIT 1 Parameters: []" type="java.sql.SQLException">java.sql.SQLException: Table 'app.payment_entity' doesn't exist Query: SELECT * FROM payment_entity ORDER BY created DESC LIMIT 1 Parameters: []
 	at org.apache.commons.dbutils.AbstractQueryRunner.rethrow(AbstractQueryRunner.java:634)
 	at org.apache.commons.dbutils.QueryRunner.query(QueryRunner.java:614)
@@ -349,7 +349,7 @@
 		... 64 more
 </failure>
   </testcase>
-  <testcase name="Two digits CVC for payment" classname="test.TestPayment" time="2.575">
+  <testcase name="Two digits CVC for payment" classname="test.TestPayment" time="3.157">
     <failure message="java.sql.SQLException: Table 'app.payment_entity' doesn't exist Query: DELETE FROM payment_entity Parameters: []" type="java.sql.SQLException">java.sql.SQLException: Table 'app.payment_entity' doesn't exist Query: DELETE FROM payment_entity Parameters: []
 	at org.apache.commons.dbutils.AbstractQueryRunner.rethrow(AbstractQueryRunner.java:634)
 	at org.apache.commons.dbutils.QueryRunner.execute(QueryRunner.java:227)
@@ -454,12 +454,12 @@
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </failure>
   </testcase>
-  <testcase name="Special characters Name for payment" classname="test.TestPayment" time="6.789">
-    <failure message="Element should be text &quot;Неверный формат&quot; {.input_has-label.findBy(text &quot;Владелец&quot;)}&#13;&#10;Element: '&lt;span class=&quot;input input_type_text input_view_default input_size_m input_width_available input_has-label input_has-value input_theme_alfa-on-white&quot;&gt;Владелец&lt;/span&gt;'&#13;&#10;Actual value: text=&quot;Владелец&quot;&#13;&#10;Screenshot: file:/C:/Users/user/IdeaProjects/Diplom/build/reports/tests/1708894030716.0.png&#13;&#10;Page source: file:/C:/Users/user/IdeaProjects/Diplom/build/reports/tests/1708894030716.0.html&#13;&#10;Timeout: 4 s." type="com.codeborne.selenide.ex.ElementShould">Element should be text &quot;Неверный формат&quot; {.input_has-label.findBy(text &quot;Владелец&quot;)}
+  <testcase name="Special characters Name for payment" classname="test.TestPayment" time="7.143">
+    <failure message="Element should be text &quot;Неверный формат&quot; {.input_has-label.findBy(text &quot;Владелец&quot;)}&#13;&#10;Element: '&lt;span class=&quot;input input_type_text input_view_default input_size_m input_width_available input_has-label input_has-value input_theme_alfa-on-white&quot;&gt;Владелец&lt;/span&gt;'&#13;&#10;Actual value: text=&quot;Владелец&quot;&#13;&#10;Screenshot: file:/C:/Users/user/IdeaProjects/Diplom/build/reports/tests/1708968708689.0.png&#13;&#10;Page source: file:/C:/Users/user/IdeaProjects/Diplom/build/reports/tests/1708968708689.0.html&#13;&#10;Timeout: 4 s." type="com.codeborne.selenide.ex.ElementShould">Element should be text &quot;Неверный формат&quot; {.input_has-label.findBy(text &quot;Владелец&quot;)}
 Element: '&lt;span class=&quot;input input_type_text input_view_default input_size_m input_width_available input_has-label input_has-value input_theme_alfa-on-white&quot;&gt;Владелец&lt;/span&gt;'
 Actual value: text=&quot;Владелец&quot;
-Screenshot: file:/C:/Users/user/IdeaProjects/Diplom/build/reports/tests/1708894030716.0.png
-Page source: file:/C:/Users/user/IdeaProjects/Diplom/build/reports/tests/1708894030716.0.html
+Screenshot: file:/C:/Users/user/IdeaProjects/Diplom/build/reports/tests/1708968708689.0.png
+Page source: file:/C:/Users/user/IdeaProjects/Diplom/build/reports/tests/1708968708689.0.html
 Timeout: 4 s.
 	at app//com.codeborne.selenide.impl.WebElementSource.handleError(WebElementSource.java:149)
 	at app//com.codeborne.selenide.impl.WebElementSource.checkConditionAndReturnElement(WebElementSource.java:127)
@@ -603,7 +603,7 @@ Timeout: 4 s.
 		... 64 more
 </failure>
   </testcase>
-  <testcase name="Card number with status ZERO for payment" classname="test.TestPayment" time="5.168">
+  <testcase name="Card number with status ZERO for payment" classname="test.TestPayment" time="4.551">
     <failure message="java.sql.SQLException: Table 'app.order_entity' doesn't exist Query: SELECT * FROM order_entity ORDER BY created DESC LIMIT 1 Parameters: []" type="java.sql.SQLException">java.sql.SQLException: Table 'app.order_entity' doesn't exist Query: SELECT * FROM order_entity ORDER BY created DESC LIMIT 1 Parameters: []
 	at org.apache.commons.dbutils.AbstractQueryRunner.rethrow(AbstractQueryRunner.java:634)
 	at org.apache.commons.dbutils.QueryRunner.query(QueryRunner.java:614)
@@ -741,7 +741,7 @@ Timeout: 4 s.
 		... 64 more
 </failure>
   </testcase>
-  <testcase name="Month One Digit for payment" classname="test.TestPayment" time="2.378">
+  <testcase name="Month One Digit for payment" classname="test.TestPayment" time="2.416">
     <failure message="java.sql.SQLException: Table 'app.payment_entity' doesn't exist Query: DELETE FROM payment_entity Parameters: []" type="java.sql.SQLException">java.sql.SQLException: Table 'app.payment_entity' doesn't exist Query: DELETE FROM payment_entity Parameters: []
 	at org.apache.commons.dbutils.AbstractQueryRunner.rethrow(AbstractQueryRunner.java:634)
 	at org.apache.commons.dbutils.QueryRunner.execute(QueryRunner.java:227)
@@ -846,12 +846,12 @@ Timeout: 4 s.
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </failure>
   </testcase>
-  <testcase name="Cyrillic Name  for payment" classname="test.TestPayment" time="6.765">
-    <failure message="Element should be text &quot;Неверный формат&quot; {.input_has-label.findBy(text &quot;Владелец&quot;)}&#13;&#10;Element: '&lt;span class=&quot;input input_type_text input_view_default input_size_m input_width_available input_has-label input_has-value input_theme_alfa-on-white&quot;&gt;Владелец&lt;/span&gt;'&#13;&#10;Actual value: text=&quot;Владелец&quot;&#13;&#10;Screenshot: file:/C:/Users/user/IdeaProjects/Diplom/build/reports/tests/1708894045114.1.png&#13;&#10;Page source: file:/C:/Users/user/IdeaProjects/Diplom/build/reports/tests/1708894045114.1.html&#13;&#10;Timeout: 4 s." type="com.codeborne.selenide.ex.ElementShould">Element should be text &quot;Неверный формат&quot; {.input_has-label.findBy(text &quot;Владелец&quot;)}
+  <testcase name="Cyrillic Name  for payment" classname="test.TestPayment" time="7.027">
+    <failure message="Element should be text &quot;Неверный формат&quot; {.input_has-label.findBy(text &quot;Владелец&quot;)}&#13;&#10;Element: '&lt;span class=&quot;input input_type_text input_view_default input_size_m input_width_available input_has-label input_has-value input_theme_alfa-on-white&quot;&gt;Владелец&lt;/span&gt;'&#13;&#10;Actual value: text=&quot;Владелец&quot;&#13;&#10;Screenshot: file:/C:/Users/user/IdeaProjects/Diplom/build/reports/tests/1708968722747.1.png&#13;&#10;Page source: file:/C:/Users/user/IdeaProjects/Diplom/build/reports/tests/1708968722747.1.html&#13;&#10;Timeout: 4 s." type="com.codeborne.selenide.ex.ElementShould">Element should be text &quot;Неверный формат&quot; {.input_has-label.findBy(text &quot;Владелец&quot;)}
 Element: '&lt;span class=&quot;input input_type_text input_view_default input_size_m input_width_available input_has-label input_has-value input_theme_alfa-on-white&quot;&gt;Владелец&lt;/span&gt;'
 Actual value: text=&quot;Владелец&quot;
-Screenshot: file:/C:/Users/user/IdeaProjects/Diplom/build/reports/tests/1708894045114.1.png
-Page source: file:/C:/Users/user/IdeaProjects/Diplom/build/reports/tests/1708894045114.1.html
+Screenshot: file:/C:/Users/user/IdeaProjects/Diplom/build/reports/tests/1708968722747.1.png
+Page source: file:/C:/Users/user/IdeaProjects/Diplom/build/reports/tests/1708968722747.1.html
 Timeout: 4 s.
 	at app//com.codeborne.selenide.impl.WebElementSource.handleError(WebElementSource.java:149)
 	at app//com.codeborne.selenide.impl.WebElementSource.checkConditionAndReturnElement(WebElementSource.java:127)
@@ -995,12 +995,12 @@ Timeout: 4 s.
 		... 64 more
 </failure>
   </testcase>
-  <testcase name="Month ZERO for payment" classname="test.TestPayment" time="6.423">
-    <failure message="Element should be text &quot;Неверно указан срок действия карты&quot; {.input_has-label.findBy(text &quot;Месяц&quot;)}&#13;&#10;Element: '&lt;span class=&quot;input input_type_text input_view_default input_size_m input_width_available input_has-label input_has-value input_theme_alfa-on-white&quot;&gt;Месяц&lt;/span&gt;'&#13;&#10;Actual value: text=&quot;Месяц&quot;&#13;&#10;Screenshot: file:/C:/Users/user/IdeaProjects/Diplom/build/reports/tests/1708894051636.2.png&#13;&#10;Page source: file:/C:/Users/user/IdeaProjects/Diplom/build/reports/tests/1708894051636.2.html&#13;&#10;Timeout: 4 s." type="com.codeborne.selenide.ex.ElementShould">Element should be text &quot;Неверно указан срок действия карты&quot; {.input_has-label.findBy(text &quot;Месяц&quot;)}
+  <testcase name="Month ZERO for payment" classname="test.TestPayment" time="7.016">
+    <failure message="Element should be text &quot;Неверно указан срок действия карты&quot; {.input_has-label.findBy(text &quot;Месяц&quot;)}&#13;&#10;Element: '&lt;span class=&quot;input input_type_text input_view_default input_size_m input_width_available input_has-label input_has-value input_theme_alfa-on-white&quot;&gt;Месяц&lt;/span&gt;'&#13;&#10;Actual value: text=&quot;Месяц&quot;&#13;&#10;Screenshot: file:/C:/Users/user/IdeaProjects/Diplom/build/reports/tests/1708968729818.2.png&#13;&#10;Page source: file:/C:/Users/user/IdeaProjects/Diplom/build/reports/tests/1708968729818.2.html&#13;&#10;Timeout: 4 s." type="com.codeborne.selenide.ex.ElementShould">Element should be text &quot;Неверно указан срок действия карты&quot; {.input_has-label.findBy(text &quot;Месяц&quot;)}
 Element: '&lt;span class=&quot;input input_type_text input_view_default input_size_m input_width_available input_has-label input_has-value input_theme_alfa-on-white&quot;&gt;Месяц&lt;/span&gt;'
 Actual value: text=&quot;Месяц&quot;
-Screenshot: file:/C:/Users/user/IdeaProjects/Diplom/build/reports/tests/1708894051636.2.png
-Page source: file:/C:/Users/user/IdeaProjects/Diplom/build/reports/tests/1708894051636.2.html
+Screenshot: file:/C:/Users/user/IdeaProjects/Diplom/build/reports/tests/1708968729818.2.png
+Page source: file:/C:/Users/user/IdeaProjects/Diplom/build/reports/tests/1708968729818.2.html
 Timeout: 4 s.
 	at app//com.codeborne.selenide.impl.WebElementSource.handleError(WebElementSource.java:149)
 	at app//com.codeborne.selenide.impl.WebElementSource.checkConditionAndReturnElement(WebElementSource.java:127)
@@ -1144,7 +1144,7 @@ Timeout: 4 s.
 		... 64 more
 </failure>
   </testcase>
-  <testcase name="Card number with status INVALID for payment" classname="test.TestPayment" time="12.005">
+  <testcase name="Card number with status INVALID for payment" classname="test.TestPayment" time="4.751">
     <failure message="java.sql.SQLException: Table 'app.order_entity' doesn't exist Query: SELECT * FROM order_entity ORDER BY created DESC LIMIT 1 Parameters: []" type="java.sql.SQLException">java.sql.SQLException: Table 'app.order_entity' doesn't exist Query: SELECT * FROM order_entity ORDER BY created DESC LIMIT 1 Parameters: []
 	at org.apache.commons.dbutils.AbstractQueryRunner.rethrow(AbstractQueryRunner.java:634)
 	at org.apache.commons.dbutils.QueryRunner.query(QueryRunner.java:614)
@@ -1282,7 +1282,7 @@ Timeout: 4 s.
 		... 64 more
 </failure>
   </testcase>
-  <testcase name="Month Over for payment" classname="test.TestPayment" time="2.217">
+  <testcase name="Month Over for payment" classname="test.TestPayment" time="2.399">
     <failure message="java.sql.SQLException: Table 'app.payment_entity' doesn't exist Query: DELETE FROM payment_entity Parameters: []" type="java.sql.SQLException">java.sql.SQLException: Table 'app.payment_entity' doesn't exist Query: DELETE FROM payment_entity Parameters: []
 	at org.apache.commons.dbutils.AbstractQueryRunner.rethrow(AbstractQueryRunner.java:634)
 	at org.apache.commons.dbutils.QueryRunner.execute(QueryRunner.java:227)
@@ -1387,7 +1387,7 @@ Timeout: 4 s.
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </failure>
   </testcase>
-  <testcase name="Year ZERO for payment" classname="test.TestPayment" time="1.887">
+  <testcase name="Year ZERO for payment" classname="test.TestPayment" time="2.426">
     <failure message="java.sql.SQLException: Table 'app.payment_entity' doesn't exist Query: DELETE FROM payment_entity Parameters: []" type="java.sql.SQLException">java.sql.SQLException: Table 'app.payment_entity' doesn't exist Query: DELETE FROM payment_entity Parameters: []
 	at org.apache.commons.dbutils.AbstractQueryRunner.rethrow(AbstractQueryRunner.java:634)
 	at org.apache.commons.dbutils.QueryRunner.execute(QueryRunner.java:227)
@@ -1492,7 +1492,7 @@ Timeout: 4 s.
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </failure>
   </testcase>
-  <testcase name="Year Less for payment" classname="test.TestPayment" time="2.08">
+  <testcase name="Year Less for payment" classname="test.TestPayment" time="2.39">
     <failure message="java.sql.SQLException: Table 'app.payment_entity' doesn't exist Query: DELETE FROM payment_entity Parameters: []" type="java.sql.SQLException">java.sql.SQLException: Table 'app.payment_entity' doesn't exist Query: DELETE FROM payment_entity Parameters: []
 	at org.apache.commons.dbutils.AbstractQueryRunner.rethrow(AbstractQueryRunner.java:634)
 	at org.apache.commons.dbutils.QueryRunner.execute(QueryRunner.java:227)
@@ -1597,7 +1597,7 @@ Timeout: 4 s.
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </failure>
   </testcase>
-  <testcase name="Year More for payment" classname="test.TestPayment" time="2.121">
+  <testcase name="Year More for payment" classname="test.TestPayment" time="2.41">
     <failure message="java.sql.SQLException: Table 'app.payment_entity' doesn't exist Query: DELETE FROM payment_entity Parameters: []" type="java.sql.SQLException">java.sql.SQLException: Table 'app.payment_entity' doesn't exist Query: DELETE FROM payment_entity Parameters: []
 	at org.apache.commons.dbutils.AbstractQueryRunner.rethrow(AbstractQueryRunner.java:634)
 	at org.apache.commons.dbutils.QueryRunner.execute(QueryRunner.java:227)
@@ -1702,7 +1702,7 @@ Timeout: 4 s.
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </failure>
   </testcase>
-  <testcase name="Card number with status APPROVED for payment" classname="test.TestPayment" time="9.639">
+  <testcase name="Card number with status APPROVED for payment" classname="test.TestPayment" time="5.239">
     <failure message="java.sql.SQLException: Table 'app.payment_entity' doesn't exist Query: SELECT * FROM payment_entity ORDER BY created DESC LIMIT 1 Parameters: []" type="java.sql.SQLException">java.sql.SQLException: Table 'app.payment_entity' doesn't exist Query: SELECT * FROM payment_entity ORDER BY created DESC LIMIT 1 Parameters: []
 	at org.apache.commons.dbutils.AbstractQueryRunner.rethrow(AbstractQueryRunner.java:634)
 	at org.apache.commons.dbutils.QueryRunner.query(QueryRunner.java:614)
@@ -1840,12 +1840,12 @@ Timeout: 4 s.
 		... 64 more
 </failure>
   </testcase>
-  <testcase name="Number Name for payment" classname="test.TestPayment" time="6.769">
-    <failure message="Element should be text &quot;Неверный формат&quot; {.input_has-label.findBy(text &quot;Владелец&quot;)}&#13;&#10;Element: '&lt;span class=&quot;input input_type_text input_view_default input_size_m input_width_available input_has-label input_has-value input_theme_alfa-on-white&quot;&gt;Владелец&lt;/span&gt;'&#13;&#10;Actual value: text=&quot;Владелец&quot;&#13;&#10;Screenshot: file:/C:/Users/user/IdeaProjects/Diplom/build/reports/tests/1708894088296.3.png&#13;&#10;Page source: file:/C:/Users/user/IdeaProjects/Diplom/build/reports/tests/1708894088296.3.html&#13;&#10;Timeout: 4 s." type="com.codeborne.selenide.ex.ElementShould">Element should be text &quot;Неверный формат&quot; {.input_has-label.findBy(text &quot;Владелец&quot;)}
+  <testcase name="Number Name for payment" classname="test.TestPayment" time="6.782">
+    <failure message="Element should be text &quot;Неверный формат&quot; {.input_has-label.findBy(text &quot;Владелец&quot;)}&#13;&#10;Element: '&lt;span class=&quot;input input_type_text input_view_default input_size_m input_width_available input_has-label input_has-value input_theme_alfa-on-white&quot;&gt;Владелец&lt;/span&gt;'&#13;&#10;Actual value: text=&quot;Владелец&quot;&#13;&#10;Screenshot: file:/C:/Users/user/IdeaProjects/Diplom/build/reports/tests/1708968756297.3.png&#13;&#10;Page source: file:/C:/Users/user/IdeaProjects/Diplom/build/reports/tests/1708968756297.3.html&#13;&#10;Timeout: 4 s." type="com.codeborne.selenide.ex.ElementShould">Element should be text &quot;Неверный формат&quot; {.input_has-label.findBy(text &quot;Владелец&quot;)}
 Element: '&lt;span class=&quot;input input_type_text input_view_default input_size_m input_width_available input_has-label input_has-value input_theme_alfa-on-white&quot;&gt;Владелец&lt;/span&gt;'
 Actual value: text=&quot;Владелец&quot;
-Screenshot: file:/C:/Users/user/IdeaProjects/Diplom/build/reports/tests/1708894088296.3.png
-Page source: file:/C:/Users/user/IdeaProjects/Diplom/build/reports/tests/1708894088296.3.html
+Screenshot: file:/C:/Users/user/IdeaProjects/Diplom/build/reports/tests/1708968756297.3.png
+Page source: file:/C:/Users/user/IdeaProjects/Diplom/build/reports/tests/1708968756297.3.html
 Timeout: 4 s.
 	at app//com.codeborne.selenide.impl.WebElementSource.handleError(WebElementSource.java:149)
 	at app//com.codeborne.selenide.impl.WebElementSource.checkConditionAndReturnElement(WebElementSource.java:127)
@@ -1989,12 +1989,12 @@ Timeout: 4 s.
 		... 64 more
 </failure>
   </testcase>
-  <testcase name="One letter Name for payment" classname="test.TestPayment" time="6.856">
-    <failure message="Element should be text &quot;Неверный формат&quot; {.input_has-label.findBy(text &quot;Владелец&quot;)}&#13;&#10;Element: '&lt;span class=&quot;input input_type_text input_view_default input_size_m input_width_available input_has-label input_has-value input_theme_alfa-on-white&quot;&gt;Владелец&lt;/span&gt;'&#13;&#10;Actual value: text=&quot;Владелец&quot;&#13;&#10;Screenshot: file:/C:/Users/user/IdeaProjects/Diplom/build/reports/tests/1708894095097.4.png&#13;&#10;Page source: file:/C:/Users/user/IdeaProjects/Diplom/build/reports/tests/1708894095097.4.html&#13;&#10;Timeout: 4 s." type="com.codeborne.selenide.ex.ElementShould">Element should be text &quot;Неверный формат&quot; {.input_has-label.findBy(text &quot;Владелец&quot;)}
+  <testcase name="One letter Name for payment" classname="test.TestPayment" time="7.044">
+    <failure message="Element should be text &quot;Неверный формат&quot; {.input_has-label.findBy(text &quot;Владелец&quot;)}&#13;&#10;Element: '&lt;span class=&quot;input input_type_text input_view_default input_size_m input_width_available input_has-label input_has-value input_theme_alfa-on-white&quot;&gt;Владелец&lt;/span&gt;'&#13;&#10;Actual value: text=&quot;Владелец&quot;&#13;&#10;Screenshot: file:/C:/Users/user/IdeaProjects/Diplom/build/reports/tests/1708968763274.4.png&#13;&#10;Page source: file:/C:/Users/user/IdeaProjects/Diplom/build/reports/tests/1708968763274.4.html&#13;&#10;Timeout: 4 s." type="com.codeborne.selenide.ex.ElementShould">Element should be text &quot;Неверный формат&quot; {.input_has-label.findBy(text &quot;Владелец&quot;)}
 Element: '&lt;span class=&quot;input input_type_text input_view_default input_size_m input_width_available input_has-label input_has-value input_theme_alfa-on-white&quot;&gt;Владелец&lt;/span&gt;'
 Actual value: text=&quot;Владелец&quot;
-Screenshot: file:/C:/Users/user/IdeaProjects/Diplom/build/reports/tests/1708894095097.4.png
-Page source: file:/C:/Users/user/IdeaProjects/Diplom/build/reports/tests/1708894095097.4.html
+Screenshot: file:/C:/Users/user/IdeaProjects/Diplom/build/reports/tests/1708968763274.4.png
+Page source: file:/C:/Users/user/IdeaProjects/Diplom/build/reports/tests/1708968763274.4.html
 Timeout: 4 s.
 	at app//com.codeborne.selenide.impl.WebElementSource.handleError(WebElementSource.java:149)
 	at app//com.codeborne.selenide.impl.WebElementSource.checkConditionAndReturnElement(WebElementSource.java:127)
@@ -2137,14 +2137,14 @@ Timeout: 4 s.
 		... 64 more
 </failure>
   </testcase>
-  <testcase name="Empty form for payment" classname="test.TestPayment" time="5.46">
-    <failure message="Element should be text &quot;Поле обязательно для заполнения&quot; {.input_has-label.findBy(text &quot;Номер карты&quot;)}&#13;&#10;Element: '&lt;span class=&quot;input input_type_text input_view_default input_size_m input_width_available input_has-label input_invalid input_theme_alfa-on-white&quot;&gt;Номер карты&#10;Неверный формат&lt;/span&gt;'&#13;&#10;Actual value: text=&quot;Номер карты&#10;Неверный формат&quot;&#13;&#10;Screenshot: file:/C:/Users/user/IdeaProjects/Diplom/build/reports/tests/1708894100668.5.png&#13;&#10;Page source: file:/C:/Users/user/IdeaProjects/Diplom/build/reports/tests/1708894100668.5.html&#13;&#10;Timeout: 4 s." type="com.codeborne.selenide.ex.ElementShould">Element should be text &quot;Поле обязательно для заполнения&quot; {.input_has-label.findBy(text &quot;Номер карты&quot;)}
+  <testcase name="Empty form for payment" classname="test.TestPayment" time="5.557">
+    <failure message="Element should be text &quot;Поле обязательно для заполнения&quot; {.input_has-label.findBy(text &quot;Номер карты&quot;)}&#13;&#10;Element: '&lt;span class=&quot;input input_type_text input_view_default input_size_m input_width_available input_has-label input_invalid input_theme_alfa-on-white&quot;&gt;Номер карты&#10;Неверный формат&lt;/span&gt;'&#13;&#10;Actual value: text=&quot;Номер карты&#10;Неверный формат&quot;&#13;&#10;Screenshot: file:/C:/Users/user/IdeaProjects/Diplom/build/reports/tests/1708968768859.5.png&#13;&#10;Page source: file:/C:/Users/user/IdeaProjects/Diplom/build/reports/tests/1708968768859.5.html&#13;&#10;Timeout: 4 s." type="com.codeborne.selenide.ex.ElementShould">Element should be text &quot;Поле обязательно для заполнения&quot; {.input_has-label.findBy(text &quot;Номер карты&quot;)}
 Element: '&lt;span class=&quot;input input_type_text input_view_default input_size_m input_width_available input_has-label input_invalid input_theme_alfa-on-white&quot;&gt;Номер карты
 Неверный формат&lt;/span&gt;'
 Actual value: text=&quot;Номер карты
 Неверный формат&quot;
-Screenshot: file:/C:/Users/user/IdeaProjects/Diplom/build/reports/tests/1708894100668.5.png
-Page source: file:/C:/Users/user/IdeaProjects/Diplom/build/reports/tests/1708894100668.5.html
+Screenshot: file:/C:/Users/user/IdeaProjects/Diplom/build/reports/tests/1708968768859.5.png
+Page source: file:/C:/Users/user/IdeaProjects/Diplom/build/reports/tests/1708968768859.5.html
 Timeout: 4 s.
 	at app//com.codeborne.selenide.impl.WebElementSource.handleError(WebElementSource.java:149)
 	at app//com.codeborne.selenide.impl.WebElementSource.checkConditionAndReturnElement(WebElementSource.java:127)
@@ -2288,9 +2288,9 @@ Timeout: 4 s.
 </failure>
   </testcase>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[февр. 25, 2024 11:46:50 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+  <system-err><![CDATA[февр. 26, 2024 8:31:20 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 122
-февр. 25, 2024 11:46:50 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+февр. 26, 2024 8:31:20 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 122.0.6261.69. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.11.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
 </testsuite>
