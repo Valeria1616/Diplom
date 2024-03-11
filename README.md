@@ -34,15 +34,38 @@
 1. С помощью Git cклонировать репозиторий командой git clone https://github.com/Valeria1616/Diplom;
 2. Запустить Docker;
 3. Открыть проект в IntelliJ IDEA;
-4. В терминале IntelliJ IDEA запустить необходимые базы данных и нужные контейнеры командой `docker-compose up -d`;
-5. В новой вкладке терминала ввести следующую команду: `java -jar aqa-shop.jar`;
-6. Проверить доступность приложения в браузере по адресу: `http://localhost:8080/`
 
-### Для запуска автотестов:
+### Запуск тестового приложения
+1. Запустить MySQL, PostgreSQL через терминал командой:
+   ```
+   docker-compose up -d
+   ```
+2. В новой вкладке терминала запустить тестируемое приложение:
+  * Для MySQL:
+   ```
+   java "-Dspring.datasource.url=jdbc:mysql://localhost:3306/app" -jar aqa-shop.jar
+   ```
+  * Для PostgreSQL:
+   ```
+   java "-Dspring.datasource.url=jdbc:postgresql://localhost:5432/app" -jar aqa-shop.jar
+   ```
+   .
+3. Убедиться в готовности системы. Сервис должен быть доступен по адресу:
+```
+http://localhost:8080/
+```
 
-- В новой вкладке терминала ввести следующую команду:  
-  `./gradlew test`.  
- 
+### Запуск тестов
+В новой вкладке терминала запустить тесты:
+1. Для MySQL:
+   ```
+   ./gradlew clean test "-Ddb.url=jdbc:mysql://localhost:3306/app"
+   ```
+1. Для PostgreSQL:
+   ```
+   ./gradlew clean test "-Ddb.url=jdbc:postgresql://localhost:5432/app"
+   ```
+
 ### Для просмотра отчетов по результатам тестирования:
 1. Сгенерировать отчет Allure, выполнив команду в терминале IDEA: ```./gradlew allureServe```
 * Если отчет не открывается автоматически в браузере, то выполнить команду: ```./gradlew allureReport``` и открыть отчет вручную (файл index.html) по адресу: ```.\build\reports\allure-report\allureReport```

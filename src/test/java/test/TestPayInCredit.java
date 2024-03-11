@@ -12,8 +12,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class TestPayInCredit {
 
-    private static DataHelper.CreditRequestEntity credit;
-    private static DataHelper.OrderEntity order;
+    private static SQLHelper.CreditRequestEntity credit;
+    private static SQLHelper.OrderEntity order;
     private static String url = System.getProperty("app.url");
 
     @BeforeAll
@@ -100,8 +100,8 @@ public class TestPayInCredit {
         page.inputCVC(3);
         page.clickContinue();
         page.waitNotificationError();
-        assertEquals(null, SQLHelper.getOrderEntity());
-        assertEquals(null, SQLHelper.getCreditRequestEntity());
+        assertNull(SQLHelper.getOrderEntity(), "Таблица order_entity не пустая");
+        assertNull(SQLHelper.getCreditRequestEntity());
 
     }
 
@@ -119,8 +119,8 @@ public class TestPayInCredit {
         page.inputCVC(3);
         page.clickContinue();
         page.waitNotificationError();
-        assertEquals(null, SQLHelper.getOrderEntity());
-        assertEquals(null, SQLHelper.getCreditRequestEntity());
+        assertNull(SQLHelper.getOrderEntity(), "Таблица order_entity не пустая");
+        assertNull(SQLHelper.getCreditRequestEntity());
 
     }
 

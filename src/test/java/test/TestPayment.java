@@ -14,8 +14,8 @@ import static data.SQLHelper.*;
 
 public class TestPayment {
 
-    private static DataHelper.PaymentEntity payment;
-    private static DataHelper.OrderEntity order;
+    private static SQLHelper.PaymentEntity payment;
+    private static SQLHelper.OrderEntity order;
     private static String url = System.getProperty("app.url");
 
     @BeforeAll
@@ -107,8 +107,8 @@ public class TestPayment {
         page.inputCVC(3);
         page.clickContinue();
         page.waitNotificationError();
-        assertEquals(null, SQLHelper.getOrderEntity());
-        assertEquals(null, SQLHelper.getPaymentEntity());
+        assertNull(SQLHelper.getOrderEntity(), "Таблица order_entity не пустая");
+        assertNull(SQLHelper.getPaymentEntity());
 
     }
 
@@ -126,8 +126,8 @@ public class TestPayment {
         page.inputCVC(3);
         page.clickContinue();
         page.waitNotificationError();
-        assertEquals(null, SQLHelper.getOrderEntity());
-        assertEquals(null, SQLHelper.getPaymentEntity());
+        assertNull(SQLHelper.getOrderEntity(), "Таблица order_entity не пустая");
+        assertNull(SQLHelper.getPaymentEntity());
     }
 
     @Test
