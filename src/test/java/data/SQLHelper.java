@@ -37,24 +37,24 @@ public class SQLHelper {
     }
 
     @SneakyThrows
-    public static DataHelper.PaymentEntity getPaymentEntity() {
+    public static SQLHelper.PaymentEntity getPaymentEntity() {
         String codeSQL = "SELECT * FROM payment_entity ORDER BY created DESC LIMIT 1";
         Connection conn = getConn();
-        return runner.query(conn, codeSQL, new BeanHandler<>(DataHelper.PaymentEntity.class));
+        return runner.query(conn, codeSQL, new BeanHandler<>(SQLHelper.PaymentEntity.class));
     }
 
     @SneakyThrows
-    public static DataHelper.CreditRequestEntity getCreditRequestEntity() {
+    public static SQLHelper.CreditRequestEntity getCreditRequestEntity() {
         String codeSQL = "SELECT * FROM credit_request_entity ORDER BY created DESC LIMIT 1";
         Connection conn = getConn();
-        return runner.query(conn, codeSQL, new BeanHandler<>(DataHelper.CreditRequestEntity.class));
+        return runner.query(conn, codeSQL, new BeanHandler<>(SQLHelper.CreditRequestEntity.class));
     }
 
     @SneakyThrows
-    public static DataHelper.OrderEntity getOrderEntity() {
+    public static SQLHelper.OrderEntity getOrderEntity() {
         String codeSQL = "SELECT * FROM order_entity ORDER BY created DESC LIMIT 1";
         Connection conn = getConn();
-        return runner.query(conn, codeSQL, new BeanHandler<>(DataHelper.OrderEntity.class));
+        return runner.query(conn, codeSQL, new BeanHandler<>(SQLHelper.OrderEntity.class));
     }
 
     @Data

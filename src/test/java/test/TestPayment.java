@@ -11,6 +11,7 @@ import page.PageTravel;
 import static com.codeborne.selenide.Selenide.open;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static data.SQLHelper.*;
+import static org.junit.jupiter.api.Assertions.assertNull;
 
 public class TestPayment {
 
