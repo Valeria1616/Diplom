@@ -15,15 +15,15 @@
 ## 2. Количество тест-кейсов
 - Всего тест-кейсов: 36
 
-![36 тестов.png](..%2F..%2FDesktop%2F36%20%F2%E5%F1%F2%EE%E2.png)
+![36 тестов](https://github.com/Valeria1616/Diplom/assets/142202736/116a9714-2fe1-4df4-92b3-115445d11882)
 
 - Успешных тест-кейсов: 21
 
-![21 тест.png](..%2F..%2FDesktop%2F21%20%F2%E5%F1%F2.png)
+![21 тест](https://github.com/Valeria1616/Diplom/assets/142202736/86f87041-a0e3-45e6-8add-f8e0ac32e86c)
 
 - Неуспешных тест-кейсов: 15
 
-![15 тестов.png](..%2F..%2FDesktop%2F15%20%F2%E5%F1%F2%EE%E2.png)
+![15 тестов](https://github.com/Valeria1616/Diplom/assets/142202736/d449f60a-76a8-44ca-83e5-b6408078ae5b)
 
 ## 3. Процент успешных/неуспешных тест-кейсов
 
